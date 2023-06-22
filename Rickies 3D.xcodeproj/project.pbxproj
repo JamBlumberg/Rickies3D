@@ -7,18 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1519B7592A4489DD00097DED /* Rickies_3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7582A4489DD00097DED /* Rickies_3DApp.swift */; };
+		1519B7642A448A2B00097DED /* CoinFlipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B75C2A448A2B00097DED /* CoinFlipsView.swift */; };
+		1519B7652A448A2B00097DED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B75D2A448A2B00097DED /* ContentView.swift */; };
+		1519B7662A448A2B00097DED /* CharitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B75E2A448A2B00097DED /* CharitiesView.swift */; };
+		1519B7672A448A2B00097DED /* BillChangesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B75F2A448A2B00097DED /* BillChangesView.swift */; };
+		1519B7682A448A2B00097DED /* WinnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7602A448A2B00097DED /* WinnersView.swift */; };
+		1519B7692A448A2B00097DED /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7612A448A2B00097DED /* EpisodesView.swift */; };
+		1519B76A2A448A2B00097DED /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7622A448A2B00097DED /* GamesView.swift */; };
+		1519B76B2A448A2B00097DED /* PicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7632A448A2B00097DED /* PicksView.swift */; };
+		1519B7742A448A4000097DED /* GamesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B76C2A448A4000097DED /* GamesFetcher.swift */; };
+		1519B7752A448A4000097DED /* IneligibleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B76D2A448A4000097DED /* IneligibleFetcher.swift */; };
+		1519B7762A448A4000097DED /* CoinFlipsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B76E2A448A4000097DED /* CoinFlipsFetcher.swift */; };
+		1519B7772A448A4000097DED /* EpisodesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B76F2A448A4000097DED /* EpisodesFetcher.swift */; };
+		1519B7782A448A4000097DED /* PicksFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7702A448A4000097DED /* PicksFetcher.swift */; };
+		1519B7792A448A4000097DED /* WinnersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7712A448A4000097DED /* WinnersFetcher.swift */; };
+		1519B77A2A448A4000097DED /* CharitiesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7722A448A4000097DED /* CharitiesFetcher.swift */; };
+		1519B77B2A448A4000097DED /* BillChangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7732A448A4000097DED /* BillChangesFetcher.swift */; };
+		1519B7892A448A5F00097DED /* CoinFlips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B77D2A448A5E00097DED /* CoinFlips.swift */; };
+		1519B78A2A448A5F00097DED /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B77E2A448A5E00097DED /* Host.swift */; };
+		1519B78B2A448A5F00097DED /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B77F2A448A5E00097DED /* AppState.swift */; };
+		1519B78C2A448A5F00097DED /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7802A448A5E00097DED /* Topic.swift */; };
+		1519B78D2A448A5F00097DED /* Picks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7812A448A5F00097DED /* Picks.swift */; };
+		1519B78E2A448A5F00097DED /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7822A448A5F00097DED /* Game.swift */; };
+		1519B78F2A448A5F00097DED /* Winners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7832A448A5F00097DED /* Winners.swift */; };
+		1519B7902A448A5F00097DED /* Ineligible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7842A448A5F00097DED /* Ineligible.swift */; };
+		1519B7912A448A5F00097DED /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7852A448A5F00097DED /* Episode.swift */; };
+		1519B7922A448A5F00097DED /* BillChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7862A448A5F00097DED /* BillChange.swift */; };
+		1519B7932A448A5F00097DED /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7872A448A5F00097DED /* Charity.swift */; };
+		1519B7942A448A5F00097DED /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7882A448A5F00097DED /* Type.swift */; };
+		1519B7972A448B3800097DED /* HTML2Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 1519B7962A448B3800097DED /* HTML2Markdown */; };
+		1519B7992A44E96500097DED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1519B7982A44E96500097DED /* README.md */; };
 		158E48562A44856500E76CE6 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 158E48552A44856500E76CE6 /* RealityKitContent */; };
-		158E48582A44856500E76CE6 /* Rickies_3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E48572A44856500E76CE6 /* Rickies_3DApp.swift */; };
-		158E485A2A44856500E76CE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E48592A44856500E76CE6 /* ContentView.swift */; };
 		158E485C2A44856600E76CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E485B2A44856600E76CE6 /* Assets.xcassets */; };
 		158E485F2A44856600E76CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E485E2A44856600E76CE6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1519B7582A4489DD00097DED /* Rickies_3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rickies_3DApp.swift; sourceTree = "<group>"; };
+		1519B75C2A448A2B00097DED /* CoinFlipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinFlipsView.swift; sourceTree = "<group>"; };
+		1519B75D2A448A2B00097DED /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1519B75E2A448A2B00097DED /* CharitiesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharitiesView.swift; sourceTree = "<group>"; };
+		1519B75F2A448A2B00097DED /* BillChangesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillChangesView.swift; sourceTree = "<group>"; };
+		1519B7602A448A2B00097DED /* WinnersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnersView.swift; sourceTree = "<group>"; };
+		1519B7612A448A2B00097DED /* EpisodesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		1519B7622A448A2B00097DED /* GamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		1519B7632A448A2B00097DED /* PicksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicksView.swift; sourceTree = "<group>"; };
+		1519B76C2A448A4000097DED /* GamesFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesFetcher.swift; sourceTree = "<group>"; };
+		1519B76D2A448A4000097DED /* IneligibleFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IneligibleFetcher.swift; sourceTree = "<group>"; };
+		1519B76E2A448A4000097DED /* CoinFlipsFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinFlipsFetcher.swift; sourceTree = "<group>"; };
+		1519B76F2A448A4000097DED /* EpisodesFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesFetcher.swift; sourceTree = "<group>"; };
+		1519B7702A448A4000097DED /* PicksFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicksFetcher.swift; sourceTree = "<group>"; };
+		1519B7712A448A4000097DED /* WinnersFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinnersFetcher.swift; sourceTree = "<group>"; };
+		1519B7722A448A4000097DED /* CharitiesFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharitiesFetcher.swift; sourceTree = "<group>"; };
+		1519B7732A448A4000097DED /* BillChangesFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillChangesFetcher.swift; sourceTree = "<group>"; };
+		1519B77D2A448A5E00097DED /* CoinFlips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinFlips.swift; sourceTree = "<group>"; };
+		1519B77E2A448A5E00097DED /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		1519B77F2A448A5E00097DED /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1519B7802A448A5E00097DED /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		1519B7812A448A5F00097DED /* Picks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picks.swift; sourceTree = "<group>"; };
+		1519B7822A448A5F00097DED /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		1519B7832A448A5F00097DED /* Winners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Winners.swift; sourceTree = "<group>"; };
+		1519B7842A448A5F00097DED /* Ineligible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ineligible.swift; sourceTree = "<group>"; };
+		1519B7852A448A5F00097DED /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		1519B7862A448A5F00097DED /* BillChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillChange.swift; sourceTree = "<group>"; };
+		1519B7872A448A5F00097DED /* Charity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
+		1519B7882A448A5F00097DED /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		1519B7982A44E96500097DED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158E48502A44856500E76CE6 /* Rickies 3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rickies 3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		158E48542A44856500E76CE6 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
-		158E48572A44856500E76CE6 /* Rickies_3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rickies_3DApp.swift; sourceTree = "<group>"; };
-		158E48592A44856500E76CE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		158E485B2A44856600E76CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158E485E2A44856600E76CE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -29,12 +86,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				158E48562A44856500E76CE6 /* RealityKitContent in Frameworks */,
+				1519B7972A448B3800097DED /* HTML2Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1519B75A2A448A0200097DED /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				1519B7732A448A4000097DED /* BillChangesFetcher.swift */,
+				1519B7722A448A4000097DED /* CharitiesFetcher.swift */,
+				1519B76E2A448A4000097DED /* CoinFlipsFetcher.swift */,
+				1519B76F2A448A4000097DED /* EpisodesFetcher.swift */,
+				1519B76C2A448A4000097DED /* GamesFetcher.swift */,
+				1519B76D2A448A4000097DED /* IneligibleFetcher.swift */,
+				1519B7702A448A4000097DED /* PicksFetcher.swift */,
+				1519B7712A448A4000097DED /* WinnersFetcher.swift */,
+			);
+			path = Fetchers;
+			sourceTree = "<group>";
+		};
+		1519B75B2A448A1600097DED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1519B75F2A448A2B00097DED /* BillChangesView.swift */,
+				1519B75E2A448A2B00097DED /* CharitiesView.swift */,
+				1519B75C2A448A2B00097DED /* CoinFlipsView.swift */,
+				1519B75D2A448A2B00097DED /* ContentView.swift */,
+				1519B7612A448A2B00097DED /* EpisodesView.swift */,
+				1519B7622A448A2B00097DED /* GamesView.swift */,
+				1519B7632A448A2B00097DED /* PicksView.swift */,
+				1519B7602A448A2B00097DED /* WinnersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1519B77C2A448A4D00097DED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1519B7862A448A5F00097DED /* BillChange.swift */,
+				1519B7872A448A5F00097DED /* Charity.swift */,
+				1519B77D2A448A5E00097DED /* CoinFlips.swift */,
+				1519B7852A448A5F00097DED /* Episode.swift */,
+				1519B7822A448A5F00097DED /* Game.swift */,
+				1519B77E2A448A5E00097DED /* Host.swift */,
+				1519B7842A448A5F00097DED /* Ineligible.swift */,
+				1519B7812A448A5F00097DED /* Picks.swift */,
+				1519B7802A448A5E00097DED /* Topic.swift */,
+				1519B7882A448A5F00097DED /* Type.swift */,
+				1519B7832A448A5F00097DED /* Winners.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		158E48472A44856500E76CE6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +161,13 @@
 		158E48522A44856500E76CE6 /* Rickies 3D */ = {
 			isa = PBXGroup;
 			children = (
-				158E48572A44856500E76CE6 /* Rickies_3DApp.swift */,
-				158E48592A44856500E76CE6 /* ContentView.swift */,
+				1519B77F2A448A5E00097DED /* AppState.swift */,
+				1519B7582A4489DD00097DED /* Rickies_3DApp.swift */,
+				1519B75A2A448A0200097DED /* Fetchers */,
+				1519B77C2A448A4D00097DED /* Models */,
+				1519B75B2A448A1600097DED /* Views */,
 				158E485B2A44856600E76CE6 /* Assets.xcassets */,
+				1519B7982A44E96500097DED /* README.md */,
 				158E485D2A44856600E76CE6 /* Preview Content */,
 			);
 			path = "Rickies 3D";
@@ -97,6 +207,7 @@
 			name = "Rickies 3D";
 			packageProductDependencies = (
 				158E48552A44856500E76CE6 /* RealityKitContent */,
+				1519B7962A448B3800097DED /* HTML2Markdown */,
 			);
 			productName = "Rickies 3D";
 			productReference = 158E48502A44856500E76CE6 /* Rickies 3D.app */;
@@ -126,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 158E48472A44856500E76CE6;
+			packageReferences = (
+				1519B7952A448B3800097DED /* XCRemoteSwiftPackageReference "HTML2Markdown" */,
+			);
 			productRefGroup = 158E48512A44856500E76CE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1519B7992A44E96500097DED /* README.md in Resources */,
 				158E485F2A44856600E76CE6 /* Preview Assets.xcassets in Resources */,
 				158E485C2A44856600E76CE6 /* Assets.xcassets in Resources */,
 			);
@@ -152,8 +267,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				158E485A2A44856500E76CE6 /* ContentView.swift in Sources */,
-				158E48582A44856500E76CE6 /* Rickies_3DApp.swift in Sources */,
+				1519B7672A448A2B00097DED /* BillChangesView.swift in Sources */,
+				1519B7762A448A4000097DED /* CoinFlipsFetcher.swift in Sources */,
+				1519B7742A448A4000097DED /* GamesFetcher.swift in Sources */,
+				1519B7752A448A4000097DED /* IneligibleFetcher.swift in Sources */,
+				1519B78D2A448A5F00097DED /* Picks.swift in Sources */,
+				1519B7682A448A2B00097DED /* WinnersView.swift in Sources */,
+				1519B7922A448A5F00097DED /* BillChange.swift in Sources */,
+				1519B76B2A448A2B00097DED /* PicksView.swift in Sources */,
+				1519B7912A448A5F00097DED /* Episode.swift in Sources */,
+				1519B7792A448A4000097DED /* WinnersFetcher.swift in Sources */,
+				1519B76A2A448A2B00097DED /* GamesView.swift in Sources */,
+				1519B7942A448A5F00097DED /* Type.swift in Sources */,
+				1519B7642A448A2B00097DED /* CoinFlipsView.swift in Sources */,
+				1519B7782A448A4000097DED /* PicksFetcher.swift in Sources */,
+				1519B77B2A448A4000097DED /* BillChangesFetcher.swift in Sources */,
+				1519B78B2A448A5F00097DED /* AppState.swift in Sources */,
+				1519B78A2A448A5F00097DED /* Host.swift in Sources */,
+				1519B78C2A448A5F00097DED /* Topic.swift in Sources */,
+				1519B7772A448A4000097DED /* EpisodesFetcher.swift in Sources */,
+				1519B7662A448A2B00097DED /* CharitiesView.swift in Sources */,
+				1519B7592A4489DD00097DED /* Rickies_3DApp.swift in Sources */,
+				1519B7652A448A2B00097DED /* ContentView.swift in Sources */,
+				1519B77A2A448A4000097DED /* CharitiesFetcher.swift in Sources */,
+				1519B7902A448A5F00097DED /* Ineligible.swift in Sources */,
+				1519B7692A448A2B00097DED /* EpisodesView.swift in Sources */,
+				1519B7932A448A5F00097DED /* Charity.swift in Sources */,
+				1519B7892A448A5F00097DED /* CoinFlips.swift in Sources */,
+				1519B78F2A448A5F00097DED /* Winners.swift in Sources */,
+				1519B78E2A448A5F00097DED /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +496,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		1519B7952A448B3800097DED /* XCRemoteSwiftPackageReference "HTML2Markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/mflint/HTML2Markdown";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		1519B7962A448B3800097DED /* HTML2Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1519B7952A448B3800097DED /* XCRemoteSwiftPackageReference "HTML2Markdown" */;
+			productName = HTML2Markdown;
+		};
 		158E48552A44856500E76CE6 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
