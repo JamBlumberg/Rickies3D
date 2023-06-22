@@ -1,8 +1,6 @@
 # Rickies-3D
 Test visionOS app created in Xcode using the rickies.net API
 
-![Simulator Screen Shot - iPhone 14 Pro - 2022-12-15 at 09 36 50](https://user-images.githubusercontent.com/17389070/207894882-adcee1df-2550-4a49-8384-3d691f76bc01.png)
-![Simulator Screen Shot - iPhone 14 Pro - 2022-12-15 at 09 41 09](https://user-images.githubusercontent.com/17389070/207894946-ec28fc22-c820-40b7-8d68-f0b523a2bb45.png)
-![Simulator Screen Shot - iPhone 14 Pro - 2022-12-15 at 09 59 01](https://user-images.githubusercontent.com/17389070/207895053-c02b7dda-4353-41b5-81a8-690599bf85ac.png)
-![Simulator Screen Shot - iPhone 14 Pro - 2022-12-15 at 09 42 54](https://user-images.githubusercontent.com/17389070/207895024-b1c4395a-c33e-4548-8872-02e9abbd03c2.png)
-
+![Simulator Screenshot - Apple Vision Pro - 2023-06-22 at 16 57 36](https://github.com/JamBlumberg/Rickies3D/assets/17389070/177d5640-d420-4ffd-920f-4e7cb4c3dd65)
+![Screenshot 2023-06-22 at 4 38 29 PM](https://github.com/JamBlumberg/Rickies3D/assets/17389070/02c23c0b-1555-48ff-9e97-372e4d7be78a)
+![Screenshot 2023-06-22 at 4 37 50 PM](https://github.com/JamBlumberg/Rickies3D/assets/17389070/c7454cc8-9b17-4cef-9711-0d45185870b5)
