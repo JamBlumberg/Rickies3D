@@ -4,11 +4,14 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+<<<<<<< HEAD
 		<key>RealityKitContent-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+=======
+>>>>>>> aaa4b57... First commit, first visionOS enhancemewnts
 		<key>RealityKitContent.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
