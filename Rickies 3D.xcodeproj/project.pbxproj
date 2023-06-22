@@ -37,7 +37,6 @@
 		1519B7932A448A5F00097DED /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7872A448A5F00097DED /* Charity.swift */; };
 		1519B7942A448A5F00097DED /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519B7882A448A5F00097DED /* Type.swift */; };
 		1519B7972A448B3800097DED /* HTML2Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 1519B7962A448B3800097DED /* HTML2Markdown */; };
-		158E48562A44856500E76CE6 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 158E48552A44856500E76CE6 /* RealityKitContent */; };
 		158E485C2A44856600E76CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E485B2A44856600E76CE6 /* Assets.xcassets */; };
 		158E485F2A44856600E76CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E485E2A44856600E76CE6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				158E48562A44856500E76CE6 /* RealityKitContent in Frameworks */,
 				1519B7972A448B3800097DED /* HTML2Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +201,6 @@
 			);
 			name = "Rickies 3D";
 			packageProductDependencies = (
-				158E48552A44856500E76CE6 /* RealityKitContent */,
 				1519B7962A448B3800097DED /* HTML2Markdown */,
 			);
 			productName = "Rickies 3D";
@@ -508,10 +505,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1519B7952A448B3800097DED /* XCRemoteSwiftPackageReference "HTML2Markdown" */;
 			productName = HTML2Markdown;
-		};
-		158E48552A44856500E76CE6 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
