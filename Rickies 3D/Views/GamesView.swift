@@ -10,8 +10,12 @@ struct GamesView: View {
         VStack {
             Text("Past Games")
                 .font(.largeTitle)
+                .padding(.top)
             if showProgressIndicator {
-                ProgressView()
+                VStack {
+                    ProgressView()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 List {
                     ForEach(searchResults, id: \.datePicked) { result in

@@ -9,6 +9,7 @@ struct EpisodesView: View {
         VStack {
             Text("Episodes")
                 .font(.largeTitle)
+                .padding(.top)
                 List {
                     ForEach(searchResults, id: \.hashValue) { result in
                         Section {
