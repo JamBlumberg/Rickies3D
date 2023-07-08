@@ -13,26 +13,53 @@ struct ContentView: View {
     @State var shownView: ShownView = .none
     
     var body: some View {
-        primaryView()
-            .ornament(attachmentAnchor: .scene(alignment: .bottom)) {
-                bottomNavOrnament()
-                    .padding3D(.back, 25)
-                    .shadow(radius: 30.0)
-            }
-    }
-    
-    @ViewBuilder func primaryView() -> some View {
-        switch shownView {
-        case .none:
+        TabView {
             buildHomeView()
-        case .winners:
+                .tabItem {
+                    HStack {
+                        Text("Home")
+                            .font(.title)
+                        Image(systemName: "house.circle")
+                            .font(.title)
+                    }
+                }
+            
             WinnersView(state: state)
-        case .charities:
+                .tabItem {
+                    Text("Winners")
+                        .font(.title)
+                    Image(systemName: "trophy.circle")
+                        .font(.title)
+                }
+            
             CharitiesView(state: state)
-        case .episodes:
+                .tabItem {
+                    HStack {
+                        Text("Donations")
+                            .font(.title)
+                        Image(systemName: "dollarsign.circle")
+                            .font(.title)
+                    }
+                }
             EpisodesView(state: state)
-        case .pastGames:
+                .tabItem {
+                    HStack {
+                        Text("Episodes")
+                            .font(.title)
+                        Image(systemName: "headphones.circle")
+                            .font(.title)
+                    }
+                }
+            
             GamesView(state: state)
+                .tabItem {
+                    HStack {
+                        Text("Games")
+                            .font(.title)
+                        Image(systemName: "flag.checkered.circle")
+                            .font(.title)
+                    }
+                }
         }
     }
     
@@ -75,90 +102,6 @@ struct ContentView: View {
                 .padding(.top, -80)
             }
             Spacer()
-        }
-    }
-    
-    @ViewBuilder func bottomNavOrnament() -> some View {
-        HStack {
-            Button {
-                shownView = .winners
-            } label: {
-                HStack {
-                    Text("Current Winners")
-                        .font(.title)
-                    Image(systemName: "trophy.circle")
-                        .font(.title)
-                }
-                .foregroundStyle(.black)
-            }
-            .background(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .opacity(0.5)
-            })
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(shownView == .winners ? .yellow : .clear, lineWidth: 3.0)
-            })
-            
-            Button {
-                shownView = .charities
-            } label: {
-                HStack {
-                    Text("Charitable Donations")
-                        .font(.title)
-                    Image(systemName: "dollarsign.circle")
-                        .font(.title)
-                }
-                .foregroundStyle(.black)
-            }
-            .background(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .opacity(0.5)
-            })
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(shownView == .charities ? .yellow : .clear, lineWidth: 3.0)
-            })
-            
-            Button {
-                shownView = .episodes
-            } label: {
-                HStack {
-                    Text("Episodes")
-                        .font(.title)
-                    Image(systemName: "headphones.circle")
-                        .font(.title)
-                }
-                .foregroundStyle(.black)
-            }
-            .background(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .opacity(0.5)
-            })
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(shownView == .episodes ? .yellow : .clear, lineWidth: 3.0)
-            })
-            
-            Button {
-                shownView = .pastGames
-            } label: {
-                HStack {
-                    Text("Past Games")
-                        .font(.title)
-                    Image(systemName: "calendar.circle")
-                        .font(.title)
-                }
-                .foregroundStyle(.black)
-            }
-            .background(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .opacity(0.5)
-            })
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(shownView == .pastGames ? .yellow : .clear, lineWidth: 3.0)
-            })
         }
     }
 }
