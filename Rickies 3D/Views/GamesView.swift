@@ -153,8 +153,6 @@ struct GamesView: View {
     }
 }
 
-struct GamesView_Previews: PreviewProvider {
-    static var previews: some View {
-        GamesView(state: AppState.shared)
-    }
+#Preview {
+    GamesView(state: AppState.shared)
 }

@@ -116,8 +116,6 @@ struct WinnersView: View {
     }
 }
 
-struct WinnersView_Previews: PreviewProvider {
-    static var previews: some View {
-        WinnersView(state: AppState.shared)
-    }
+#Preview {
+    WinnersView(state: AppState.shared)
 }

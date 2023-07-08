@@ -52,8 +52,6 @@ struct BillChangesView: View {
     }
 }
 
-struct BillChangesView_Previews: PreviewProvider {
-    static var previews: some View {
-        BillChangesView(state: AppState.shared)
-    }
+#Preview {
+    BillChangesView(state: AppState.shared)
 }
