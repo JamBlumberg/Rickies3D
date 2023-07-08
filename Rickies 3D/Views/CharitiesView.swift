@@ -7,6 +7,7 @@ struct CharitiesView: View {
         VStack {
             Text("Charitable Donations")
                 .font(.largeTitle)
+                .padding(.top)
             List {
                 ForEach(searchResults, id: \.charityName) { charity in
                     Section {

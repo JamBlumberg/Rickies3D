@@ -7,6 +7,7 @@ struct WinnersView: View {
         VStack {
             Text("Current Winners")
                 .font(.largeTitle)
+                .padding(.top)
             HStack {
                 if let winners = state.winners {
                     List {
