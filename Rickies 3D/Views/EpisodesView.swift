@@ -80,9 +80,3 @@ struct SafariView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {
     }
 }
-
-//struct EpisodesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EpisodesView(state: AppState.shared)
-//    }
-//}

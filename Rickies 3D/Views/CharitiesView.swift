@@ -46,3 +46,7 @@ struct CharitiesView: View {
     }
 }
 
+#Preview {
+    CharitiesView(state: AppState.shared)
+}
+
