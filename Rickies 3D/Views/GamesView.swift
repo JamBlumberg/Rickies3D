@@ -8,97 +8,107 @@ struct GamesView: View {
     @State var showProgressIndicator: Bool = true
     var body: some View {
         VStack {
-            Text("Past Games")
-                .font(.largeTitle)
-                .padding(.top)
             if showProgressIndicator {
+                Text("Past Games")
+                    .font(.largeTitle)
+                    .padding(.top)
+                    .foregroundStyle(.black)
                 VStack {
                     ProgressView()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
-                List {
-                    ForEach(searchResults, id: \.datePicked) { result in
-                        Section {
-                            Text("Game Type: \(result.gameType)")
-                            Text("Date Picked: \(result.datePicked)")
-                            Text("Date Graded: \(result.dateGraded)")
-                            if let mainGame = result.mainGame {
-                                NavigationLink {
-                                    PicksView(picks: mainGame.picks)
-                                } label: {
-                                    Text("Main Game Picks")
-                                }
-                                Text("Main Game Winner: \(mainGame.winner)")
-                                if let coinFlips = mainGame.coinFlips {
-                                    if !coinFlips.isEmpty {
-                                        NavigationLink {
-                                            CoinFlipsView(coinFlips: coinFlips)
-                                        } label: {
-                                            Text("Main Game Coin Flips")
-                                        }
+                NavigationStack {
+                    List {
+                        ForEach(searchResults, id: \.datePicked) { result in
+                            Section {
+                                Text("Game Type: \(result.gameType)")
+                                Text("Date Picked: \(result.datePicked)")
+                                Text("Date Graded: \(result.dateGraded)")
+                                if let mainGame = result.mainGame {
+                                    NavigationLink {
+                                        PicksView(picks: mainGame.picks)
+                                    } label: {
+                                        Text("Main Game Picks")
                                     }
-                                }
-                            }
-                            if let theFlexies = result.theFlexies {
-                                NavigationLink {
-                                    PicksView(picks: theFlexies.picks)
-                                } label: {
-                                    Text("The Flexies Picks")
-                                }
-                                if let winner = theFlexies.winner {
-                                    Text("The Flexies Winner: \(winner)")
-                                }
-                                if let coinFlips = theFlexies.coinFlips {
-                                    if !coinFlips.isEmpty {
-                                        NavigationLink {
-                                            CoinFlipsView(coinFlips: coinFlips)
-                                        } label: {
-                                            Text("The Flexies Coin Flips")
-                                        }
-                                    }
-                                }
-                            }
-                            if let nongraded = result.nongraded {
-                                NavigationLink {
-                                    PicksView(picks: nongraded.picks)
-                                } label: {
-                                    Text("Nongraded picks")
-                                }
-                            }
-                            if let relevantEpisodes = result.relevantEpisodes {
-                                ScrollView(.horizontal) {
-                                    HStack {
-                                        Text("Relevant Episodes: ")
-                                        ForEach(relevantEpisodes, id: \.title) { episode in
-                                            Button {
-                                                Task {
-                                                    relevantEpisode = episode
-                                                }
+                                    Text("Main Game Winner: \(mainGame.winner)")
+                                    if let coinFlips = mainGame.coinFlips {
+                                        if !coinFlips.isEmpty {
+                                            NavigationLink {
+                                                CoinFlipsView(coinFlips: coinFlips)
                                             } label: {
-                                                Text("\(episode.title)  |")
+                                                Text("Main Game Coin Flips")
                                             }
                                         }
                                     }
                                 }
+                                if let theFlexies = result.theFlexies {
+                                    NavigationLink {
+                                        PicksView(picks: theFlexies.picks)
+                                    } label: {
+                                        Text("The Flexies Picks")
+                                    }
+                                    if let winner = theFlexies.winner {
+                                        Text("The Flexies Winner: \(winner)")
+                                    }
+                                    if let coinFlips = theFlexies.coinFlips {
+                                        if !coinFlips.isEmpty {
+                                            NavigationLink {
+                                                CoinFlipsView(coinFlips: coinFlips)
+                                            } label: {
+                                                Text("The Flexies Coin Flips")
+                                            }
+                                        }
+                                    }
+                                }
+                                if let nongraded = result.nongraded {
+                                    NavigationLink {
+                                        PicksView(picks: nongraded.picks)
+                                    } label: {
+                                        Text("Nongraded picks")
+                                    }
+                                }
+                                if let relevantEpisodes = result.relevantEpisodes {
+                                    ScrollView(.horizontal) {
+                                        HStack {
+                                            Text("Relevant Episodes: ")
+                                            ForEach(relevantEpisodes, id: \.title) { episode in
+                                                Button {
+                                                    Task {
+                                                        relevantEpisode = episode
+                                                    }
+                                                } label: {
+                                                    Text("\(episode.title)  |")
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            } header: {
+                                Text(result.name)
                             }
-                        } header: {
-                            Text(result.name)
                         }
                     }
+                    .toolbar {
+                        ToolbarItem {
+                            VStack(alignment: .center) {
+                                // TODO: - Trying to figure out how to get this to be in the center
+                                Text("Past Games")
+                                    .font(.largeTitle)
+                                    .padding(.top)
+                            }
+                        }
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {
+                                reverse.toggle()
+                            } label: {
+                                reverse ? Image(systemName: "arrow.up") : Image(systemName: "arrow.down")
+                            }
+                        }
+                    }
+                    .searchable(text: $searchText, placement: .navigationBarDrawer, prompt: "Search by episode, game name or type")
                 }
-            }
-        }
-        .foregroundStyle(.black)
-        .searchable(text: $searchText, prompt: "Search by episode, game name or type")
-        .toolbar {
-            ToolbarItem {
-                Button {
-                    reverse.toggle()
-                } label: {
-                    reverse ? Image(systemName: "arrow.up") : Image(systemName: "arrow.down")
-                }
-
+                .foregroundStyle(.black)
             }
         }
         .task {
