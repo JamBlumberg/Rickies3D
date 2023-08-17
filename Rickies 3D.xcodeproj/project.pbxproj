@@ -39,6 +39,7 @@
 		1519B7972A448B3800097DED /* HTML2Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 1519B7962A448B3800097DED /* HTML2Markdown */; };
 		158E485C2A44856600E76CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E485B2A44856600E76CE6 /* Assets.xcassets */; };
 		158E485F2A44856600E76CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E485E2A44856600E76CE6 /* Preview Assets.xcassets */; };
+		15B1888B2A8EA76800A33D96 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15B1888A2A8EA76800A33D96 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		158E48502A44856500E76CE6 /* Rickies 3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rickies 3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		158E485B2A44856600E76CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158E485E2A44856600E76CE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15B1888A2A8EA76800A33D96 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				1519B7582A4489DD00097DED /* Rickies_3DApp.swift */,
 				1519B75A2A448A0200097DED /* Fetchers */,
 				1519B77C2A448A4D00097DED /* Models */,
+				15B188892A8EA74F00A33D96 /* Resources */,
 				1519B75B2A448A1600097DED /* Views */,
 				158E485B2A44856600E76CE6 /* Assets.xcassets */,
 				158E485D2A44856600E76CE6 /* Preview Content */,
@@ -172,6 +175,14 @@
 				158E485E2A44856600E76CE6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15B188892A8EA74F00A33D96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15B1888A2A8EA76800A33D96 /* Localizable.xcstrings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 			files = (
 				158E485F2A44856600E76CE6 /* Preview Assets.xcassets in Resources */,
 				158E485C2A44856600E76CE6 /* Assets.xcassets in Resources */,
+				15B1888B2A8EA76800A33D96 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
