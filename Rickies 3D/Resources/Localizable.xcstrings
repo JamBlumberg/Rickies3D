@@ -1,0 +1,442 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@  |" : {
+
+    },
+    "%@ the %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ the %2$@"
+          }
+        }
+      }
+    },
+    "| " : {
+
+    },
+    "All data sourced from the excellant rickies.net API" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All data sourced from the excellant rickies.net API"
+          }
+        }
+      }
+    },
+    "Annual:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annual:"
+          }
+        }
+      }
+    },
+    "Bill Changes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bill Changes"
+          }
+        }
+      }
+    },
+    "Charitable Donations" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Charitable Donations"
+          }
+        }
+      }
+    },
+    "Coin Flips" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coin Flips"
+          }
+        }
+      }
+    },
+    "Current Winners" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Winners"
+          }
+        }
+      }
+    },
+    "Date Graded: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date Graded: %@"
+          }
+        }
+      }
+    },
+    "Date Picked: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date Picked: %@"
+          }
+        }
+      }
+    },
+    "Donation Amount: $%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donation Amount: $%lld"
+          }
+        }
+      }
+    },
+    "Donations" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donations"
+          }
+        }
+      }
+    },
+    "Donator: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donator: %@"
+          }
+        }
+      }
+    },
+    "Episode %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Episode %lld"
+          }
+        }
+      }
+    },
+    "Episode Link" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Episode Link"
+          }
+        }
+      }
+    },
+    "Episode Number: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Episode Number: %lld"
+          }
+        }
+      }
+    },
+    "Episodes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Episodes"
+          }
+        }
+      }
+    },
+    "Flexies:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flexies:"
+          }
+        }
+      }
+    },
+    "Flip method: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flip method: %@"
+          }
+        }
+      }
+    },
+    "Game Type: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game Type: %@"
+          }
+        }
+      }
+    },
+    "Games" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Games"
+          }
+        }
+      }
+    },
+    "Home" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
+    },
+    "Keynote:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keynote:"
+          }
+        }
+      }
+    },
+    "Loser: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loser: %@"
+          }
+        }
+      }
+    },
+    "Main Game Coin Flips" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main Game Coin Flips"
+          }
+        }
+      }
+    },
+    "Main Game Picks" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main Game Picks"
+          }
+        }
+      }
+    },
+    "Main Game Winner: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main Game Winner: %@"
+          }
+        }
+      }
+    },
+    "Nongraded picks" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nongraded picks"
+          }
+        }
+      }
+    },
+    "Overcast link" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overcast link"
+          }
+        }
+      }
+    },
+    "Past Games" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Past Games"
+          }
+        }
+      }
+    },
+    "Picks" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Picks"
+          }
+        }
+      }
+    },
+    "Relevant Episodes: " : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relevant Episodes: "
+          }
+        }
+      }
+    },
+    "Relevant Games: " : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relevant Games: "
+          }
+        }
+      }
+    },
+    "Result: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Result: %@"
+          }
+        }
+      }
+    },
+    "Score: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score: %@"
+          }
+        }
+      }
+    },
+    "Search by donator, charity or game" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search by donator, charity or game"
+          }
+        }
+      }
+    },
+    "Search by episode, game name or type" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search by episode, game name or type"
+          }
+        }
+      }
+    },
+    "Search for an episode by game or number" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for an episode by game or number"
+          }
+        }
+      }
+    },
+    "The Flexies Coin Flips" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Flexies Coin Flips"
+          }
+        }
+      }
+    },
+    "The Flexies Picks" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Flexies Picks"
+          }
+        }
+      }
+    },
+    "The Flexies Winner: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Flexies Winner: %@"
+          }
+        }
+      }
+    },
+    "Welcome to the Rickies!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to the Rickies!"
+          }
+        }
+      }
+    },
+    "Winner: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Winner: %@"
+          }
+        }
+      }
+    },
+    "Winners" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Winners"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
