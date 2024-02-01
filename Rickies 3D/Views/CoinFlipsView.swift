@@ -3,6 +3,9 @@ import SwiftUI
 struct CoinFlipsView: View {
     @State var coinFlips: [CoinFlips]
     @State var showSafari: Bool = false
+    
+    @Environment(\.openURL) var openURL
+
     var body: some View {
         VStack {
             List {
@@ -14,13 +17,12 @@ struct CoinFlipsView: View {
                         Text("Loser: \(flip.loser)")
                         Button {
                             showSafari.toggle()
+                            if let url = URL(string: flip.overcastLink) {
+                                openURL(url)
+                            }
                         } label: {
                             Text("Overcast link")
-                        }.sheet(isPresented: $showSafari, content: {
-                            if let url = URL(string: flip.overcastLink) {
-                                SafariView(url: url)
-                            }
-                        })
+                        }
                     } header: {
                         Text(flip.game)
                     }

@@ -4,8 +4,10 @@ import RealityKit
 struct ContentView: View {
     @StateObject var state = AppState.shared
     @State var showSafari: Bool = false
-    @Environment(\.colorScheme) var colorScheme
     
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.openURL) var openURL
+
     enum ShownView {
         case none, winners, charities, episodes, pastGames
     }
@@ -77,13 +79,15 @@ struct ContentView: View {
                             .opacity(0.5)
                     })
                     .glassBackgroundEffect()
-                    .shadow(radius: 20)
                     .padding3D(.back, 25)
                 
                 Spacer()
                 
                 Button {
                     showSafari.toggle()
+                    if let url = URL(string: "https://rickies.net") {
+                        openURL(url)
+                    }
                 } label: {
                     Text("All data sourced from the excellant rickies.net API")
                         .foregroundStyle(.black)
@@ -92,12 +96,8 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .opacity(0.5)
                 })
-                .sheet(isPresented: $showSafari, content: {
-                    if let url = URL(string: "https://rickies.net") {
-                        SafariView(url: url)
-                    }
-                })
                 .shadow(radius: 20)
+                .glassBackgroundEffect()
                 .padding3D(.back, 25)
                 .padding(.top, -80)
             }

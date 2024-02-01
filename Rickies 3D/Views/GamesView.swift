@@ -6,6 +6,9 @@ struct GamesView: View {
     @State var reverse: Bool = false
     @State var relevantEpisode: RelevantEpisodes?
     @State var showProgressIndicator: Bool = true
+    
+    @Environment(\.openURL) var openURL
+
     var body: some View {
         VStack {
             if showProgressIndicator {
@@ -76,6 +79,9 @@ struct GamesView: View {
                                                 Button {
                                                     Task {
                                                         relevantEpisode = episode
+                                                        if let url = URL(string: episode.url) {
+                                                            openURL(url)
+                                                        }
                                                     }
                                                 } label: {
                                                     Text("\(episode.title)  |")
@@ -117,11 +123,6 @@ struct GamesView: View {
                 showProgressIndicator.toggle()
             } catch {
                 print("error fetching games")
-            }
-        }
-        .sheet(item: $relevantEpisode) { episode in
-            if let url = URL(string: episode.url) {
-                SafariView(url: url)
             }
         }
     }
